@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Sopranos | Form{% endblock %}
+
+{% block body %}
+
+    <h1>Vul uw gegevens in aub</h1>
+
+    {{ form_start(pizzaForm) }}
+        {{ form_widget(pizzaForm) }}
+
+    <button type="submit" class="btn btn-danger">Bestel</button>
+    {{ form_end(pizzaForm) }}
+
+
+{% endblock %}
